@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* === Asosiy sozlamalar === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* === Container === */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* === Header === */
+.header {
+  background: #0000007e;
+  backdrop-filter: blur(15px);
+  padding: 15px 0;
+  z-index: 10;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0px;;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__img {
+  width: 70px;
+  height: auto;
+}
+
+.header__list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.header__link:hover,
+.header__link.active {
+  color: #4caf50;
+}
+
+/* === FAMILY SECTION === */
+.family {
+  display: flex;
+  padding: 70px 0;
+  background-color: #000;
+  justify-content: space-around;
+}
+
+.family__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* har bir qatordagi asosiy tuzilma */
+.family__list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 180px;
+  flex-wrap: wrap;
+}
+
+/* faqat 2-chi va 4-chi qatorda tartib teskari */
+.family__list li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* === Matn qismi === */
+.family__info {
+  /* display: flex; */
+  flex: 1;
+  min-width: 280px;
+  max-width: 325px;
+  /* flex-direction: row-reverse; */
+  /* justify-content: space-around; */
+}
+
+.family__info h2 {
+  font-size: 28px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.family__info p {
+  font-size: 18px;
+  color: #ddd;
+  max-width: 500px;
+}
+
+/* === Rasm qismi === */
+.family__img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.family__img img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 3px solid #4caf50;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.family__img img:hover {
+  transform: scale(1.05);
+}

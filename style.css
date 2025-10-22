@@ -1,0 +1,118 @@
+/* Umumiy sozlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Handlee", cursive;
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Header (Navbar) ===== */
+.header {
+  background: #000;
+  padding: 15px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__img {
+  width: 70px;
+  height: auto;
+}
+
+.header__list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.header__link:hover {
+  color: #4caf50;
+}
+
+/* ===== About Section ===== */
+.about {
+  padding: 80px 0;
+}
+
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about__info {
+  flex: 1;
+}
+
+.about__info h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about__txt {
+  font-size: 18px;
+  color: #ccc;
+  margin: 20px 0 40px;
+}
+
+.about__btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.about__btn:hover {
+  background: #45a049;
+}
+
+/* ===== Rasm o‘ngda ===== */
+.about__right {
+  width: 300px;
+  height: 400px;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+
+  box-shadow: 0 19px 250px 15px green;
+}
+
+.about__img {
+  width: 100%;
+
+  object-fit: contain;
+  background-size: 200px;
+
+  /* yorqinlikni pasaytirish */
+  filter: brightness(0.99); /* 1 dan kichik qiymat → qoraroq */
+}
